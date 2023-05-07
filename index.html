@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IP Address Tracker</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+  integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+  crossorigin=""></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="search-bar" class="container">
+    <h1>IP Address Tracker</h1>
+    <form id="ip-form">
+      <div class="form-group">
+        <input type="text" id="ip-address" name="ip-address" placeholder="Search for any IP address or domain" required>
+        <button type="submit"></button>
+      </div>
+    </form>
+    <section class="data">
+      <div class="data-wrapper">
+        <p>IP Address</p>
+        <div id="ip"></div>
+      </div>
+      <div class="data-wrapper">
+        <p>Location</p>
+        <div id="location"></div>
+      </div>
+      <div class="data-wrapper">
+        <p>Timezone</p>
+        <div id="timezone"></div>
+      </div>
+      <div class="data-wrapper">
+        <p>ISP</p>
+        <div id="isp"></div>
+      </div>
+    </section>
+  </section>
+  <div id="map"></div>
+  
+  <!-- JS/JQuery -->
+  <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
