@@ -1,4 +1,4 @@
-const api_key = "at_2nkZkG9b5vXQZIgWxQOe67plOFJL9";
+const api_key = "at_tzqdfeVZ1drjbGaDmM5XTF6wNMvpI";
 let map;
 const timezoneNames = {
     "-12": "AoE",

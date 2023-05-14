@@ -15,14 +15,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section id="search-bar" class="container">
-    <h1>IP Address Tracker</h1>
-    <form id="ip-form">
-      <div class="form-group">
+  <section class="grid-container">
+    
+    <header class="header">
+      <form id="ip-form">
+        <h1>IP Address Tracker</h1>
         <input type="text" id="ip-address" name="ip-address" placeholder="Search for any IP address or domain" required>
-        <button type="submit"></button>
-      </div>
-    </form>
+      </form>
+    </header>
+    
     <section class="data">
       <div class="data-wrapper">
         <p>IP Address</p>
@@ -41,9 +42,9 @@
         <div id="isp"></div>
       </div>
     </section>
+    
+    <div id="map" class="map"></div>
   </section>
-  <div id="map"></div>
-  
   <!-- JS/JQuery -->
   <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
